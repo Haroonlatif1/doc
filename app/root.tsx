@@ -5,7 +5,14 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-
+// export const links = () => {
+//   return [
+//     {
+//       rel: "icon",
+//       href: "ak.png"
+//     }
+//   ];
+// };
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -14,6 +21,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+
       </head>
       <body>
         {children}
