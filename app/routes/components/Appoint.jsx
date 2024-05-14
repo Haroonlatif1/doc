@@ -6,7 +6,7 @@ function AppointmentSection() {
             <h2>Make an Appointment</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
-          <form action="forms/appointment.php" method="post" role="form" className="php-email-form">
+          <form className="php-email-form">
             <div className="row">
               <div className="col-md-4 form-group">
                 <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

@@ -15,10 +15,10 @@ function DoctorsSection() {
                   <span>Chief Medical Officer</span>
                   <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                   <div className="social">
-                    <a href=""><i className="ri-twitter-fill"></i></a>
-                    <a href=""><i className="ri-facebook-fill"></i></a>
-                    <a href=""><i className="ri-instagram-fill"></i></a>
-                    <a href=""> <i className="ri-linkedin-box-fill"></i> </a>
+                    <a href="ww"><i className="ri-twitter-fill"></i></a>
+                    <a href="ww"><i className="ri-facebook-fill"></i></a>
+                    <a href="ww"><i className="ri-instagram-fill"></i></a>
+                    <a href="ww"> <i className="ri-linkedin-box-fill"></i> </a>
                   </div>
                 </div>
               </div>
