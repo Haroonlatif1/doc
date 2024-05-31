@@ -3,12 +3,11 @@ function WhyUsSection() {
       <section id="why-us" className="why-us">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 d-flex align-items-stretch">
-              <div className="content">
-                <h3>Why Choose Medilab?</h3>
+            <div className="col-lg-4 d-flex align-items-stretch ">
+              <div className="content ">
+                <h3>Why Choose Our Therapy Services?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                  Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                  At our clinic, we combine cutting-edge techniques with personalized care to deliver effective speech and occupational therapy solutions. Our team is committed to helping individuals enhance their ability to communicate and live independently.
                 </p>
                 <div className="text-center">
                   <a href="ww" className="more-btn">Learn More <i className="bx bx-chevron-right"></i></a>
@@ -18,25 +17,25 @@ function WhyUsSection() {
             <div className="col-lg-8 d-flex align-items-stretch">
               <div className="icon-boxes d-flex flex-column justify-content-center">
                 <div className="row">
-                  <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="col-xl-4 d-flex align-items-stretch trans">
                     <div className="icon-box mt-4 mt-xl-0">
-                      <i className="bx bx-receipt"></i>
-                      <h4>Corporis voluptates sit</h4>
-                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                      <i className="bx bx-chat"></i>
+                      <h4>Advanced Speech Therapy</h4>
+                      <p>Our expert speech therapists use proven techniques to address a range of communication disorders, ensuring personalized care for every age group.</p>
                     </div>
                   </div>
-                  <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="col-xl-4 d-flex align-items-stretch trans">
                     <div className="icon-box mt-4 mt-xl-0">
-                      <i className="bx bx-cube-alt"></i>
-                      <h4>Ullamco laboris ladore pan</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                      <i className="bx bx-body"></i>
+                      <h4>Comprehensive Occupational Therapy</h4>
+                      <p>We empower individuals to overcome physical and cognitive challenges through targeted activities that enhance daily living skills.</p>
                     </div>
                   </div>
-                  <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="col-xl-4 d-flex align-items-stretch trans">
                     <div className="icon-box mt-4 mt-xl-0">
-                      <i className="bx bx-images"></i>
-                      <h4>Labore consequatur</h4>
-                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                      <i className="bx bx-brain"></i>
+                      <h4>Individualized Care Plans</h4>
+                      <p>Each therapy plan is tailored to meet the unique needs of our clients, guided by experienced therapists committed to your health and independence.</p>
                     </div>
                   </div>
                 </div>
@@ -47,6 +46,5 @@ function WhyUsSection() {
       </section>
     );
   }
-  
+
   export default WhyUsSection;
-  

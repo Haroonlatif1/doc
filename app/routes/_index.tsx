@@ -9,9 +9,12 @@ import Faq from "./components/faq"
 import Hero from "./components/hero"
 import Services from "./components/services"
 import Testno from "./components/testno"
+import Navbar from "./components/navbar"
 import Whyus from "./components/why_us"
-
+import Footer from "./components/footer" 
+import Index1 from "./components/index1.jsx"
 // Corrected function to return proper objects for <link> tags
+
 export const links = () => {
   return [
     {
@@ -28,17 +31,22 @@ export const links = () => {
 export default function Index() {
   return (
     <div>
+      <Navbar/>
+      <Hero/>
       <About/>
+      <Services/>
+      <Index1/>
+
+      <Docsec/>
       <Album/>
+      <Whyus/>
       <Appoint/>
       <Counts/>
       <Department/>
-      <Docsec/>
       <Faq/>
-      <Hero/>
-      <Services/>
       <Testno/>
-      <Whyus/>
+      <Footer/>
+      
     </div>
   );
 }

@@ -3,50 +3,50 @@ function ServicesSection() {
       <section id="services" className="services">
         <div className="container">
           <div className="section-title">
-            <h2>Services</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>Our Services</h2>
+            <p>At Lahore Speech Therapy Clinic, we offer a comprehensive range of services to address various speech and language disorders.</p>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div className="icon-box">
                 <div className="icon"><i className="fas fa-heartbeat"></i></div>
-                <h4><a href="ww">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                <h4><a href="#service1">Speech Clarity Enhancement</a></h4>
+                <p>We help improve speech clarity through targeted exercises and techniques, enhancing communication skills.</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
               <div className="icon-box">
                 <div className="icon"><i className="fas fa-pills"></i></div>
-                <h4><a href="ww">Sed ut perspiciatis</a></h4>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <h4><a href="#service2">Stuttering Management</a></h4>
+                <p>Our therapy programs are designed to help individuals manage and overcome stuttering challenges effectively.</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
               <div className="icon-box">
                 <div className="icon"><i className="fas fa-hospital-user"></i></div>
-                <h4><a href="ww">Magni Dolores</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                <h4><a href="#service3">Language Development</a></h4>
+                <p>We provide comprehensive support for language development, focusing on improving vocabulary, grammar, and comprehension.</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div className="icon-box">
-                <div className="icon"><i className="fas fa-dna"></i></div>
-                <h4><a href="ww">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                <div className="icon"><i className="fas fa-microphone-alt"></i></div>
+                <h4><a href="#service4">Voice Therapy</a></h4>
+                <p>Our voice therapy sessions aim to address voice disorders such as hoarseness, pitch, and volume control issues.</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div className="icon-box">
-                <div className="icon"><i className="fas fa-wheelchair"></i></div>
-                <h4><a href="ww">Dele cardo</a></h4>
-                <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                <div className="icon"><i className="fas fa-headset"></i></div>
+                <h4><a href="#service5">Auditory Processing Therapy</a></h4>
+                <p>We offer specialized therapy to improve auditory processing skills, helping individuals better interpret and understand auditory information.</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div className="icon-box">
-                <div className="icon"><i className="fas fa-notes-medical"></i></div>
-                <h4><a href="ww">Divera don</a></h4>
-                <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                <div className="icon"><i className="fas fa-hand-sparkles"></i></div>
+                <h4><a href="#service6">Oral Motor Therapy</a></h4>
+                <p>Our oral motor therapy focuses on strengthening the muscles used in speech production, improving articulation and clarity.</p>
               </div>
             </div>
           </div>
