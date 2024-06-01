@@ -1,31 +1,34 @@
 import { useState } from 'react';
-
+import Modal from "./modalpopup"
 function AppointmentForm() {
   const [formStatus, setFormStatus] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSendMessage = () => {
+    // Simulate sending a message
+    setTimeout(() => {
+      setIsModalOpen(true);
+      setTimeout(() => setIsModalOpen(false), 3000); // Automatically close after 3 seconds
+    }, 1000);
+  };
 
   async function handleSubmit(event) {
     event.preventDefault();
-  
-    const formData = {
-      name: event.target.name.value,
-      phone: event.target.phone.value,
-      date: event.target.date.value,
-      service: event.target.service.value,
-      therapist: event.target.therapist.value,
-      message: event.target.message.value
-    };
-  
+
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
     setFormStatus('loading'); // Set loading state
-  
+
     try {
-      const response = await fetch('/api/submit-appointment', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(data)
       });
-  
+
       if (response.ok) {
         setFormStatus('success');
       } else {
@@ -50,7 +53,7 @@ function AppointmentForm() {
               <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
             </div>
             <div className="col-md-6 form-group">
-              <input type="email" name="name" className="form-control" id="name" placeholder="Your Email" required />
+              <input type="email" name="email" className="form-control" id="email" placeholder="Your Email" required />
             </div>
           </div>
           <div className="row mt-3">
@@ -83,9 +86,14 @@ function AppointmentForm() {
             {formStatus === 'error' && <div className="error-message">Error sending email. Please try again later.</div>}
             {formStatus === 'success' && <div className="sent-message">Your appointment request has been sent successfully. Thank you!</div>}
           </div>
-          <div className="text-center"><button type="submit">Book Appointment</button></div>
+          <div className="text-center">
+            <button type="submit"  onClick={handleSendMessage}>Book Appointment</button>
+          </div>
+          <input type="hidden" name="access_key" value="c378879d-8bbf-4ffd-941a-de9fdf242885" />
         </form>
       </div>
+      <Modal isOpen={isModalOpen} />
+
     </section>
   );
 }
