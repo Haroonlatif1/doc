@@ -2,8 +2,8 @@ import './assets/style.css'; // Ensure this path is correct
 import About from "./components/about"
 import Album from "./components/album"
 import Appoint from "./components/Appoint"
-import Counts from "./components/counts"
 import Department from "./components/department"
+import Counts from "./components/counts"
 import Docsec from "./components/docsec"
 import Faq from "./components/faq"
 import Hero from "./components/hero"
@@ -32,11 +32,11 @@ export default function Index() {
     <div>
       <Navbar/>
       <Hero/>
+      <Whyus/>
       <About/>
       <Services/>
       <Docsec/>
       <Album/>
-      <Whyus/>
       <Appoint/>
       <Counts/>
       <Department/>

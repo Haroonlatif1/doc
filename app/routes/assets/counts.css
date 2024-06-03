@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.counter-page {
+    padding: 20px;
+  }
+  
+  .spacer {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter-container {
+    margin-top: 20px;
+  }
+  
+  .counter-card {
+    background: #f8f9fa;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+    border:none;
+  }
+  
+  .counter-card:hover {
+    transform: translateY(-10px);
+    background-color: #007bff;
+    color: #f8f9fa;
+  }
+  
+  .counter-card:hover .icon,
+  .counter-card:hover .counti {
+    color: #f8f9fa;
+  }
+  
+  .icon {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  h1 {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .counti {
+    color: #007bff;
+    font-size: 27px;
+    font-family: 'Raleway', sans-serif;
+  }
+  

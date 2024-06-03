@@ -1,40 +1,73 @@
-function CountsSection() {
-    return (
-        <section id="counts" className="counts">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-3 col-md-6">
-                        <div className="count-box">
-                            <i className="fas fa-user-md"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" className="purecounter"></span>
-                            <p>Specialized Therapists</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
-                        <div className="count-box">
-                            <i className="fas fa-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1" className="purecounter"></span>
-                            <p>Successful Treatments</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div className="count-box">
-                            <i className="fas fa-calendar-alt"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" className="purecounter"></span>
-                            <p>Sessions This Year</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div className="count-box">
-                            <i className="fas fa-book-reader"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" className="purecounter"></span>
-                            <p>Educational Workshops</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-}
+import { useState } from 'react';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrophy, faCalendarCheck, faUserMd } from '@fortawesome/free-solid-svg-icons';
+import '../assets/counts.css'
 
-export default CountsSection;
+const CounterUpPage = () => {
+  const [counterOn, setCounterOn] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    onChange: (inView) => {
+      setCounterOn(inView);
+    },
+  });
+
+  return (
+    <div className="container text-center counter-page">
+     
+      <div ref={ref} className="row counter-container">
+        {counterOn && (
+          <>
+            <div className="col-md-4">
+              <div className="card counter-card">
+                <div className="card-body">
+                  <FontAwesomeIcon icon={faTrophy} size="2x" className="icon" />
+                  <h2>
+                    Successful treatments
+                    
+                  </h2>
+                  <p className='counti'>
+                    <CountUp start={0} end={80} duration={2} delay={0.2} />%
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card counter-card">
+                <div className="card-body">
+                  <FontAwesomeIcon icon={faCalendarCheck} size="2x" className="icon" />
+                  <h2>
+                    Sessions this year
+                
+                  </h2>
+                  <p className='counti'><CountUp start={0} end={1000} duration={2} delay={0} />+</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card counter-card">
+                <div className="card-body">
+                  <FontAwesomeIcon icon={faUserMd} size="2x" className="icon" />
+                  <h2>
+                    Specialized therapists
+                    
+                  </h2>
+                  <p className='counti'>0
+                    <CountUp start={0} end={5} duration={3} delay={0} />
+                    </p>
+                    
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+     
+    </div>
+  );
+};
+
+export default CounterUpPage;

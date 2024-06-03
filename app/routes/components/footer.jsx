@@ -1,11 +1,27 @@
+import { useState } from 'react';
+import Modal from "./modalpopup2";
 
 function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSendMessage = () => {
+    // Simulate sending a message
+    setTimeout(() => {
+      setIsModalOpen(true);
+      setTimeout(() => setIsModalOpen(false), 3000); // Automatically close after 3 seconds
+    }, 1000);
+  };
+
+  const handler = (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    handleSendMessage();
+  };
+
   return (
     <footer id="footer">
       <div className="footer-top">
         <div className="container">
           <div className="row">
-
             <div className="col-lg-3 col-md-6 footer-contact">
               <h3>Therapist Clinic</h3>
               <p>
@@ -16,7 +32,6 @@ function Footer() {
                 <strong>Email:</strong> info@therapistclinic.com<br />
               </p>
             </div>
-
             <div className="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
@@ -27,7 +42,6 @@ function Footer() {
                 <li><i className="bx bx-chevron-right"></i> <a href="www">Privacy policy</a></li>
               </ul>
             </div>
-
             <div className="col-lg-3 col-md-6 footer-links">
               <h4>Our Services</h4>
               <ul>
@@ -38,21 +52,19 @@ function Footer() {
                 <li><i className="bx bx-chevron-right"></i> <a href="www">Family Therapy</a></li>
               </ul>
             </div>
-
             <div className="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
+              <h4>Join us</h4>
               <p>Stay updated with our latest news and updates</p>
-              <form action="" method="post">
-                <input type="email" name="email" placeholder="Enter your email" /><input type="submit" value="Subscribe" />
+              <form onSubmit={handler}>
+                <input type="email" name="email" placeholder="Enter your email" />
+                <input type="submit" value="Subscribe" />
               </form>
+              <Modal isOpen={isModalOpen} />
             </div>
-
           </div>
         </div>
       </div>
-
       <div className="container d-md-flex py-4">
-
         <div className="me-md-auto text-center text-md-start">
           <div className="copyright">
             &copy; 2024 <strong><span>Therapist Clinic</span></strong>. All Rights Reserved

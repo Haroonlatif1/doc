@@ -1,0 +1,120 @@
+.departments {
+    background: #f1f7fd;
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section-title p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .nav-tabs {
+    border-bottom: none;
+  }
+  
+  .nav-tabs .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .nav-tabs .nav-item .btn {
+    background: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-tabs .nav-item .btn:hover {
+    background: #ddd;
+  }
+  
+  .nav-tabs .nav-item .btn.active {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .tab-content {
+    padding: 10px 0;
+  }
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  .details {
+    padding: 50px 100px 50px 100px; /* increased padding */
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .details p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col-lg-3,
+  .col-lg-9 {
+    padding: 0 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .col-lg-3,
+    .col-lg-9 {
+      width: 100%;
+    }
+    .details {
+      padding: 50px 200px 50px 200px; /* reduced padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .details {
+      padding: 30px 150px 30px 150px; /* reduced padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .details {
+      padding: 20px 100px 20px 100px; /* reduced padding for smaller screens */
+    }
+  }
