@@ -22,7 +22,12 @@ model docdb {
  updatedAt DateTime @updatedAt
 }
 model User {
-  id    Int     @id @default(autoincrement())
-  name  String
-  email String  @unique
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  phone     String   @db.VarChar(191)
+  date      DateTime
+  service   String
+  therapist String
+  message   String
 }
