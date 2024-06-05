@@ -5,14 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-// export const links = () => {
-//   return [
-//     {
-//       rel: "icon",
-//       href: "ak.png"
-//     }
-//   ];
-// };
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

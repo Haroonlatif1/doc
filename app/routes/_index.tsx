@@ -1,8 +1,8 @@
 import './assets/style.css'; // Ensure this path is correct
 import About from "./components/about"
 import Album from "./components/album"
-import Appoint from "./components/Appoint"
 import Department from "./components/department"
+import Appoint from "./components/Appoint"
 import Counts from "./components/counts"
 import Docsec from "./components/docsec"
 import Faq from "./components/faq"
